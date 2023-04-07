@@ -46,6 +46,9 @@ app.get('/readme', (req, res) => {
     res.write('<h4>Congrats, the app is installed</h4>');
     res.end();
 });
+app.get('/', (req,res) => {
+    res.send('Hello from our smartbug oauth app')
+})
 
 //Listner
 app.listen(process.env.PORT, () => console.log('listening on ' + process.env.PORT));
