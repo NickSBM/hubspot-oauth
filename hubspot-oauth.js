@@ -12,7 +12,7 @@ const queryString = require('querystring');
 ///////////////////////////////////////////////////////////////////////////////
 
 //Constants
-const redirectURI = 'https://hubspot-oauth.vercel.app/oath-callback';  //This should probably be an environment var
+const redirectURI = '44.212.63.1:3001/oath-callback';  //This should probably be an environment var
 const authURL = 'https://api.hubapi.com/oauth/v1/token';
 
 //getNewToken
