@@ -1,9 +1,11 @@
 //required installed modules
+console.log('running server script')
 const express = require('express');
 const axios = require('axios');
 const bodyParser = require('body-parser');
 const crypt =require('crypto');  //used to validate HubSpot request
 const querystring = require('querystring');
+const PORT = 3001 || process.env.PORT
 
 //declare custom modules
 const hsOauth = require('./hubspot-oauth');
@@ -51,7 +53,7 @@ app.get('/', (req,res) => {
 })
 
 //Listner
-app.listen(process.env.PORT, () => console.log('listening on ' + process.env.PORT));
+app.listen(PORT, () => console.log('listening on ' + PORT));
 
 
 
